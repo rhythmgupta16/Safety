@@ -14,6 +14,7 @@ class Profile extends React.Component {
             <View style={styles.container}>
                 <Text>Profile Screen</Text>
                 <Text>{this.props.user.email}</Text>
+                <Button title = 'HomeScreen' onPress = {() => this.props.navigation.navigate('Home') } />
                 <Button title='Logout' onPress={this.handleSignout} />
             </View>
         )
