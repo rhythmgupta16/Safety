@@ -5,7 +5,8 @@ import {
 	Text,
 	View,
 	Alert,
-	TouchableOpacity
+	TouchableOpacity,
+  Button
 } from 'react-native';
 
 
@@ -40,6 +41,9 @@ export default class FindMe extends Component {
 					<Text style={styles.welcome}>Find My Coords?</Text>
 					<Text>Location: {this.state.location}</Text>
 				</TouchableOpacity>
+        <Button title="Locate on Map"
+        onPress={() => this.props.navigation.navigate('Map') }
+        />
 			</View>
 		);
 	}

@@ -1,12 +1,13 @@
-import React from 'react'
-import { createSwitchNavigator, createAppContainer } from 'react-navigation'
+import React from 'react';
+import { createSwitchNavigator, createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from '../src/screens/HomeScreen';
 import CallSDC from '../src/screens/CallSDC';
-import Login from '../src/screens/Login'
-import Signup from '../src/screens/Signup'
-import Profile from '../src/screens/Profile'
-import FindMe from '../src/screens/FindMe'
-import { createStackNavigator } from 'react-navigation-stack';
+import Login from '../src/screens/Login';
+import Signup from '../src/screens/Signup';
+import Profile from '../src/screens/Profile';
+import FindMe from '../src/screens/FindMe';
+import Map from '../src/screens/Map';
 
 const NavigationStack = createStackNavigator({
   Home: {
@@ -25,6 +26,12 @@ const NavigationStack = createStackNavigator({
     screen: FindMe,
     navigationOptions: {
       headerTitle: 'FindMe',
+    },
+  },
+  Map: {
+    screen: Map,
+    navigationOptions: {
+      headerTitle: 'Map',
     },
   },
 });
