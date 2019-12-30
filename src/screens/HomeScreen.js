@@ -8,6 +8,9 @@ const HomeScreen = (props) => {
     <Button title="Go to Emergency Call Screen"
     onPress={() => props.navigation.navigate('Call') }
     />
+    <Button title="Find me"
+    onPress={() => props.navigation.navigate('FindMe') }
+    />
     </View>
   );
 };

@@ -5,6 +5,7 @@ import CallSDC from '../src/screens/CallSDC';
 import Login from '../src/screens/Login'
 import Signup from '../src/screens/Signup'
 import Profile from '../src/screens/Profile'
+import FindMe from '../src/screens/FindMe'
 import { createStackNavigator } from 'react-navigation-stack';
 
 const NavigationStack = createStackNavigator({
@@ -17,7 +18,13 @@ const NavigationStack = createStackNavigator({
   Call: {
     screen: CallSDC,
     navigationOptions: {
-      headerTitle: 'Sign In',
+      headerTitle: 'Call',
+    },
+  },
+  FindMe: {
+    screen: FindMe,
+    navigationOptions: {
+      headerTitle: 'FindMe',
     },
   },
 });
