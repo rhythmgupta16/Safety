@@ -11,6 +11,9 @@ const HomeScreen = (props) => {
     <Button title="Find me"
     onPress={() => props.navigation.navigate('FindMe') }
     />
+    <Button title="Click/Upload Image"
+    onPress={() => props.navigation.navigate('ImageUpload') }
+    />
     </View>
   );
 };

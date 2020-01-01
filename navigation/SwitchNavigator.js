@@ -8,6 +8,9 @@ import Signup from '../src/screens/Signup';
 import Profile from '../src/screens/Profile';
 import FindMe from '../src/screens/FindMe';
 import Map from '../src/screens/Map';
+import ImageUpload from '../src/screens/ImageUpload';
+import ClickImage from '../src/screens/ClickImage';
+import GalleryImage from '../src/screens/GalleryImage';
 
 const NavigationStack = createStackNavigator({
   Home: {
@@ -32,6 +35,24 @@ const NavigationStack = createStackNavigator({
     screen: Map,
     navigationOptions: {
       headerTitle: 'Map',
+    },
+  },
+  ImageUpload: {
+    screen: ImageUpload,
+    navigationOptions: {
+      headerTitle: 'ImageUpload',
+    },
+  },
+  ClickImage: {
+    screen: ClickImage,
+    navigationOptions: {
+      headerTitle: 'ClickImage',
+    },
+  },
+  GalleryImage: {
+    screen: GalleryImage,
+    navigationOptions: {
+      headerTitle: 'GalleryImage',
     },
   },
 });
