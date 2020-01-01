@@ -44,6 +44,11 @@ export default class FindMe extends Component {
         <Button title="Locate on Map"
         onPress={() => this.props.navigation.navigate('Map') }
         />
+				<Button
+				title="Check Weather"
+				onPress={() =>
+					this.props.navigation.navigate('WeatherMain', {located: this.state.location})}
+					/>
 			</View>
 		);
 	}

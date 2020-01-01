@@ -11,6 +11,7 @@ import Map from '../src/screens/Map';
 import ImageUpload from '../src/screens/ImageUpload';
 import ClickImage from '../src/screens/ClickImage';
 import GalleryImage from '../src/screens/GalleryImage';
+import WeatherMain from '../src/screens/WeatherMain';
 
 const NavigationStack = createStackNavigator({
   Home: {
@@ -53,6 +54,12 @@ const NavigationStack = createStackNavigator({
     screen: GalleryImage,
     navigationOptions: {
       headerTitle: 'GalleryImage',
+    },
+  },
+  WeatherMain: {
+    screen: WeatherMain,
+    navigationOptions: {
+      headerTitle: 'WeatherMain',
     },
   },
 });
