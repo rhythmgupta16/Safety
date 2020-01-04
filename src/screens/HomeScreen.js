@@ -14,6 +14,9 @@ const HomeScreen = (props) => {
     <Button title="Click/Upload Image"
     onPress={() => props.navigation.navigate('ImageUpload') }
     />
+    <Button title="Open Safety Tips"
+    onPress={() => props.navigation.navigate('Tips') }
+    />
     </View>
   );
 };
